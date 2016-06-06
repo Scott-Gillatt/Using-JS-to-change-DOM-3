@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Quiz</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<style>
+			body {
+				margin: 20px;
+			}
+			
+			.item {
+			  background-color: none;
+			  border: 1px solid black;
+			  color: black;
+			  display: inline-block;
+				padding: 5px;
+				text-align: center;
+				width: 150px;
+			}
+			
+			.hover {
+			  background-color: #116DAE;
+			  color: white;
+			}
+			
+			div {
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id="itemList">
+			</div>
+			<div>
+				<form class="form-horizontal">
+					<div class="form-group text-center">
+						<label for="firstName" class="col-sm-4 control-label">Summary</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control text-center" id="itemSummary" placeholder="Summary">
+						</div>
+					</div>
+					<div class="form-group text-center">
+						<label for="lastName" class="col-sm-4 control-label">Detail</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control text-center" id="itemDetail" placeholder="Detail">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="text-center">
+				<button id="addBtn" class="btn btn-primary btn-block btn-lg" type="button">Add Item</button>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
